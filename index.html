@@ -1,0 +1,46 @@
+<!--HTML significa Hypertext Markup Language (Linguagem de Marcação em Hypertexto), ou seja, o HTML não é uma linguagem de programação, mas sim, uma de MARCAÇÃO de informações em formato de Hypertexto-->
+
+<!DOCTYPE html> <!--Define que estamos trabalhando na versão mais recente do HTML, no caso, atualmente é o HTML5-->
+<html lang="pt-br"> <!--É elemento raíz da página e tudo precisa estar dentro dele--> 
+    <head> <!--Define as metainformações que haverão dentro da página, como conteúdos visíveis ou não-->
+        <meta charset="UTF-8"> <!--Codificação dos Caracteres utilizados pelo sistema (essa é a mais utilizada no Mundo atualmente-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Configuração para que, no navegador Edge, sempre rode em sua versão mais recente-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Adequa a escala da página de acordo com o dispositivo que abriu o site--> 
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Portifólio</title> <!--Título da página, que aparecerá na barra de título do navegador-->
+    </head>
+    <body> <!--O Centro de todos os conteúdos visíveis de uma página (cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.)-->
+        <header class="cabecalho" >
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__texto" href="index.html">Home</a>
+                <a class="cabecalho__menu__texto" href="about.html">Sobre mim</a>
+            </nav>
+        </header> <!--Cabeçalho da Página-->
+        <main class="apresentacao"> <!--Toda estrutura principal da página-->
+            <section class="apresentacao__conteudo">
+                
+                <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <span class="destaque-titulo">com um Front-end de qualidade!</span></h1> <!--Texto em caixa alta-->
+                <h4 class="apresentacao__conteudo__texto"> Olá! Sou o Guilherme Bonugli, desenvolvedor Front-end com especialidade em HTML, CSS e Javascript. Ajudo pequenos negócios e designers a colocar em prática boas ideias. Vamos conversar? </h4> <!--Parágrafo-->
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes!</h2>
+                
+                <div class="apresentacao__links">
+                    <a class="apresentacao__links__link" href="https://www.instagram.com/nuforestart/" target="_blank"> Instagram <!-- target="_blanket" diz ao sistema para abrir o link em uma nova aba --> 
+                        <img class="apresentacao__links__link__icones" src="./assets/instagram.png">
+                    </a> <!--Ancoragem de itens e links-->
+                    <a class="apresentacao__links__link" href="https://www.tiktok.com/@nuforestmusic" target="_blank"> TikTok
+                        <img class="apresentacao__links__link__icones" src="./assets/tiktok.png" >
+                    </a> <!--Ancoragem de itens e links-->
+                </div>
+            </section>
+            <a class="apresentacao__perfil" href="about.html"> 
+                <figure>
+                    <img class="apresentacao__perfil__foto" src="./assets/eu.png" alt="Foto de Guilherme">
+                    <figcaption class="apresentacao__perfil__sobre">Sobre mim</figcaption>
+                </figure>
+            </a>
+        </main> 
+        <footer class="rodape">
+            <p>Desenvolvido por Guilherme Bonugli Felippelli</p>
+        </footer> <!--Rodapé da página-->
+    </body>  
+</html>
